@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Capture_API</key>
+	<dict>
+		<key>API_URL</key>
+		<string>http://192.168.1.70:8000/</string>
+		<key>Authorization</key>
+		<dict>
+			<key>ClientId</key>
+			<string>mLLYEoRLZ7ThNVNXRqHcDK4ssClkFeRezYXUGXkU</string>
+			<key>ClientSecret</key>
+			<string>YYEYBxqemRXAdDN4rJrQv1jCHC7vFYRBaYyWMVqe0SJ2ka6WAuUauG2bhd94stDU9jVIPuCT9D373Z1nsnWdvO8nGao4dRK3n8XYg0AzrM1PRvpOEfEfCYk9gWWbeOSu</string>
+		</dict>
+		<key>is-dev</key>
+		<true/>
+	</dict>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>da32135cdcb291510e61ba7d513ccd53993d596f</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>11</string>
+	<key>FacebookDisplayName</key>
+	<string>Capture</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>fb-messenger-api</string>
+		<string>twitter</string>
+		<string>whatsapp</string>
+		<string>wechat</string>
+		<string>line</string>
+		<string>instagram</string>
+		<string>kakaotalk</string>
+		<string>mqq</string>
+		<string>vk</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Capture needs to acces camera</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Capture requires access to your phone’s location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Capture requires access to your phone’s location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Capture needs to acces mic</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Capture needs acces to your images to edit them</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

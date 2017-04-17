@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Custom_Filters" representedClassName=".Custom_Filters" syncable="YES">
+        <attribute name="brightness" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="contrast" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="filterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isCustom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="levelsBBlack" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsBGamma" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsBMax" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsBMin" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsBWhite" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsGBlack" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsGGamma" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsGMax" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsGMin" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsGWhite" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRBlack" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGamma" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGBBlack" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGBGamma" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGBMax" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGBMin" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRGBWhite" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRMax" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRMin" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="levelsRWhite" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="saturation" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="sharp" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="tiltShift" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="vignette" optional="YES" attributeType="Float" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Custom_Filters" positionX="-63" positionY="-18" width="128" height="510"/>
+    </elements>
+</model>

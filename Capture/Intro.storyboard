@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="oC6-00-C1J">
+            <objects>
+                <viewController storyboardIdentifier="IntroVc" id="Om2-k7-sqH" customClass="IntroViewController" customModule="CAPTURE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k7Z-vu-ouB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q5K-rx-K7p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzy-JB-zwN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byY-22-nq1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="VaO-Ql-a1j" kind="embed" id="cgX-OK-EBd"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qh3-Kh-F4m" customClass="PageControl" customModule="CAPTURE" customModuleProvider="target">
+                                <rect key="frame" x="168" y="523" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.46274509803921571" green="0.792156862745098" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.10588235294117647" green="0.65098039215686276" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59q-Xl-0bq">
+                                <rect key="frame" x="325" y="32" width="34" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.89803921568627454" green="0.035294117647058823" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSkipButton:" destination="Om2-k7-sqH" eventType="touchUpInside" id="Bjn-ps-eIX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-xc-lec" customClass="OvalButton" customModule="CAPTURE" customModuleProvider="target">
+                                <rect key="frame" x="12" y="586" width="350" height="58"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.65098039220000004" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didButton:" destination="Om2-k7-sqH" eventType="touchUpInside" id="2ZP-Nh-8aQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dvz-xc-lec" firstAttribute="leading" secondItem="hzy-JB-zwN" secondAttribute="leading" constant="12" id="8cf-Ya-Xbw"/>
+                            <constraint firstItem="Q5K-rx-K7p" firstAttribute="top" secondItem="Qh3-Kh-F4m" secondAttribute="bottomMargin" constant="115" id="9xc-Yh-1VA"/>
+                            <constraint firstItem="byY-22-nq1" firstAttribute="centerX" secondItem="hzy-JB-zwN" secondAttribute="centerX" id="Ffn-8o-4jW"/>
+                            <constraint firstItem="byY-22-nq1" firstAttribute="centerY" secondItem="hzy-JB-zwN" secondAttribute="centerY" id="GsK-No-gTh"/>
+                            <constraint firstItem="Dvz-xc-lec" firstAttribute="top" secondItem="Qh3-Kh-F4m" secondAttribute="bottom" constant="26" id="PUN-kg-7K1"/>
+                            <constraint firstItem="byY-22-nq1" firstAttribute="height" secondItem="hzy-JB-zwN" secondAttribute="height" id="VZ6-KM-LYb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="59q-Xl-0bq" secondAttribute="trailing" id="eQ0-Cx-7er"/>
+                            <constraint firstItem="59q-Xl-0bq" firstAttribute="top" secondItem="k7Z-vu-ouB" secondAttribute="bottom" constant="12" id="jG0-a3-l0I"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvz-xc-lec" secondAttribute="trailing" constant="13" id="jH1-rf-nL1"/>
+                            <constraint firstItem="byY-22-nq1" firstAttribute="width" secondItem="hzy-JB-zwN" secondAttribute="width" id="phh-UC-Dpo"/>
+                            <constraint firstItem="Qh3-Kh-F4m" firstAttribute="centerX" secondItem="hzy-JB-zwN" secondAttribute="centerX" id="uxn-UF-ac8"/>
+                            <constraint firstItem="Q5K-rx-K7p" firstAttribute="top" secondItem="Dvz-xc-lec" secondAttribute="bottom" constant="23" id="x8t-Dc-EFM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="byY-22-nq1" id="foz-sy-vkf"/>
+                        <outlet property="pageControl" destination="Qh3-Kh-F4m" id="4b0-v7-9XK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CA4-EW-wt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122.40000000000001" y="-235.23238380809596"/>
+        </scene>
+        <!--Intro Page View Controller-->
+        <scene sceneID="FTe-2u-GKg">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="VaO-Ql-a1j" customClass="IntroPageViewController" customModule="CAPTURE" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmM-x5-JY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="442"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iYl-uv-YRe">
+            <objects>
+                <viewController storyboardIdentifier="1ViewController" id="m3j-2O-bXw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sgg-JT-tgk"/>
+                        <viewControllerLayoutGuide type="bottom" id="bTO-lD-g8M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4S-yF-EHf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-ex-4As" customClass="ImageView" customModule="CAPTURE" customModuleProvider="target">
+                                <rect key="frame" x="77.5" y="94" width="220" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xe4-ex-4As" secondAttribute="height" multiplier="73:80" id="VBf-kx-W7f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To CAPTURE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCW-A3-nB3">
+                                <rect key="frame" x="38" y="380" width="299" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299" id="gvW-a7-H1c"/>
+                                    <constraint firstAttribute="height" constant="28" id="h5H-Of-npc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="CAPTURE is a cool new way to create and share awesome videos with your friends and the world." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-Z1-D9r">
+                                <rect key="frame" x="34" y="414" width="307" height="79"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="AN2-vd-Mtb"/>
+                                    <constraint firstAttribute="width" constant="307" id="c2U-a4-nLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JCW-A3-nB3" firstAttribute="centerX" secondItem="p4S-yF-EHf" secondAttribute="centerX" id="1GI-Ug-gdV"/>
+                            <constraint firstItem="Cgc-Z1-D9r" firstAttribute="centerX" secondItem="p4S-yF-EHf" secondAttribute="centerX" id="1ML-bW-108"/>
+                            <constraint firstItem="xe4-ex-4As" firstAttribute="top" secondItem="Sgg-JT-tgk" secondAttribute="bottom" constant="74" id="7Mf-8a-652"/>
+                            <constraint firstItem="bTO-lD-g8M" firstAttribute="top" secondItem="JCW-A3-nB3" secondAttribute="bottom" constant="259" id="UyT-EX-VuP"/>
+                            <constraint firstItem="xe4-ex-4As" firstAttribute="centerX" secondItem="p4S-yF-EHf" secondAttribute="centerX" id="eG5-MP-hMB"/>
+                            <constraint firstItem="JCW-A3-nB3" firstAttribute="top" secondItem="xe4-ex-4As" secondAttribute="bottom" constant="46" id="eb7-JM-W77"/>
+                            <constraint firstItem="bTO-lD-g8M" firstAttribute="top" secondItem="Cgc-Z1-D9r" secondAttribute="bottom" constant="174" id="fkz-bh-CHL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ6-iy-BT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671.20000000000005" y="-235.23238380809596"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CQQ-ce-Gl5">
+            <objects>
+                <viewController storyboardIdentifier="2ViewController" id="S9R-h9-Gh8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kBI-70-tek"/>
+                        <viewControllerLayoutGuide type="bottom" id="9rW-Id-SNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntw-vX-jVO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introloggo" translatesAutoresizingMaskIntoConstraints="NO" id="ftE-PK-xV8" customClass="ShadowImage" customModule="CAPTURE" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="273"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Awesome Videos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBy-aN-kbQ">
+                                <rect key="frame" x="38" y="390" width="299" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8l8-lG-znH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOc-GY-EIu">
+                                <rect key="frame" x="32" y="424" width="310" height="96"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="83H-sK-z5b"/>
+                                    <constraint firstAttribute="height" constant="96" id="FBv-7Y-4dr"/>
+                                </constraints>
+                                <string key="text">CAPTURE’S powerful video editor allows you to use unique filters, create custom filters of your own, and add music from your iTunes Music library.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qOc-GY-EIu" firstAttribute="centerX" secondItem="HBy-aN-kbQ" secondAttribute="centerX" id="2nv-6s-MgE"/>
+                            <constraint firstItem="HBy-aN-kbQ" firstAttribute="top" secondItem="ftE-PK-xV8" secondAttribute="bottom" constant="25" id="EkV-ho-tvR"/>
+                            <constraint firstItem="HBy-aN-kbQ" firstAttribute="width" secondItem="ntw-vX-jVO" secondAttribute="width" multiplier="0.8" constant="-1" id="G7s-JF-XFe"/>
+                            <constraint firstItem="ftE-PK-xV8" firstAttribute="leading" secondItem="ntw-vX-jVO" secondAttribute="leading" id="b1m-gw-6dd"/>
+                            <constraint firstAttribute="trailing" secondItem="ftE-PK-xV8" secondAttribute="trailing" id="hln-mZ-qxY"/>
+                            <constraint firstItem="9rW-Id-SNc" firstAttribute="top" secondItem="qOc-GY-EIu" secondAttribute="bottom" constant="147" id="j43-bZ-dDJ"/>
+                            <constraint firstItem="qOc-GY-EIu" firstAttribute="top" secondItem="HBy-aN-kbQ" secondAttribute="bottom" constant="6" id="kMI-6J-FfD"/>
+                            <constraint firstItem="ftE-PK-xV8" firstAttribute="top" secondItem="kBI-70-tek" secondAttribute="bottom" constant="72" id="py7-uK-5rJ"/>
+                            <constraint firstItem="HBy-aN-kbQ" firstAttribute="centerX" secondItem="ntw-vX-jVO" secondAttribute="centerX" id="uMC-Wb-ttk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2j-4c-9ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="471.8140929535233"/>
+        </scene>
+        <!--Get Started View Controller-->
+        <scene sceneID="Sn7-0D-0Uq">
+            <objects>
+                <viewController storyboardIdentifier="3ViewController" id="aTP-Br-O8s" customClass="GetStartedViewController" customModule="CAPTURE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uL6-te-tqI"/>
+                        <viewControllerLayoutGuide type="bottom" id="err-cn-y8k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DbS-AJ-A00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introphone" translatesAutoresizingMaskIntoConstraints="NO" id="Ozi-r9-T0s" customClass="ShadowImage" customModule="CAPTURE" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="65" width="326" height="283"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore &amp; Share With Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1U-MJ-6W8">
+                                <rect key="frame" x="44" y="380" width="287" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="xca-yy-akS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your video creations with your friends and explore other great videos posted on CAPTURE." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44V-iv-CRD">
+                                <rect key="frame" x="44.5" y="414" width="287" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="TH3-FQ-bbw"/>
+                                    <constraint firstAttribute="height" constant="65" id="dFp-AC-AJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ozi-r9-T0s" firstAttribute="top" secondItem="uL6-te-tqI" secondAttribute="bottom" constant="45" id="7nK-sn-JTz"/>
+                            <constraint firstAttribute="trailing" secondItem="Ozi-r9-T0s" secondAttribute="trailing" constant="49" id="KgS-xi-JDJ"/>
+                            <constraint firstItem="v1U-MJ-6W8" firstAttribute="top" secondItem="Ozi-r9-T0s" secondAttribute="bottom" constant="32" id="QY7-hl-qDp"/>
+                            <constraint firstAttribute="bottom" secondItem="v1U-MJ-6W8" secondAttribute="bottom" constant="259" id="hzd-RF-rZL"/>
+                            <constraint firstItem="44V-iv-CRD" firstAttribute="top" secondItem="v1U-MJ-6W8" secondAttribute="bottom" constant="6" id="ltO-h1-bDx"/>
+                            <constraint firstItem="Ozi-r9-T0s" firstAttribute="leading" secondItem="DbS-AJ-A00" secondAttribute="leading" id="mU1-vG-rwz"/>
+                            <constraint firstItem="v1U-MJ-6W8" firstAttribute="centerX" secondItem="DbS-AJ-A00" secondAttribute="centerX" id="nnt-VG-SPn"/>
+                            <constraint firstItem="44V-iv-CRD" firstAttribute="centerX" secondItem="v1U-MJ-6W8" secondAttribute="centerX" id="yzu-Dj-ae9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sO-WM-h61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="1134.7826086956522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="350" height="336"/>
+        <image name="introloggo" width="750" height="542"/>
+        <image name="introphone" width="661" height="567"/>
+    </resources>
+</document>
